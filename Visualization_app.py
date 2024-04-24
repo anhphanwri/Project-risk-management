@@ -4,8 +4,14 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
-# Load data
-df = pd.read_csv('/home/anh/project_risk_management_dashboard_data.csv')
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the file path relative to the script directory
+file_path = os.path.join(script_dir, 'project_risk_management_dashboard_data.csv')
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv(file_path)
 
 # Set pandas display options to show all columns and rows
 pd.set_option('display.max_columns', None)
