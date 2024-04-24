@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 # Load data
-df = pd.read_csv('project_risk_management_dashboard_data.csv')
+df = pd.read_csv('/home/anh/project_risk_management_dashboard_data.csv')
 
 # Set pandas display options to show all columns and rows
 pd.set_option('display.max_columns', None)
