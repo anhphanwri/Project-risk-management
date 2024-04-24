@@ -12,7 +12,7 @@ dir_name = os.path.abspath(os.path.dirname(__file__))
 location = os.path.join(dir_name, 'project_risk_management_dashboard_data.csv')
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv(location)
+df = pd.read_csv('project_risk_management_dashboard_data.csv')
 
 # Set pandas display options to show all columns and rows
 pd.set_option('display.max_columns', None)
