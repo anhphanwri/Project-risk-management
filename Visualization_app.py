@@ -3,6 +3,7 @@ import streamlit as st
 import plotly.express as px
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
+import os
 
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
