@@ -29,23 +29,6 @@ st.set_page_config(
 columns_to_drop = ['Portfolio Name', 'Portfolio ID', 'Project ID', 'Risk ID', 'Link to the risk']
 df = df.drop(columns_to_drop, axis=1)
 
-
-# Define custom CSS styles
-def local_css(file_name, **kwargs):
-    with open(file_name) as f:
-        css_content = f.read()
-        for key, value in kwargs.items():
-            css_content = css_content.replace('{{' + key + '}}', value)
-        st.markdown(f'<style>{css_content}</style>', unsafe_allow_html=True)
-
-# Apply custom CSS with provided options
-local_css("style.css",
-          primaryColor="#F63366",
-          backgroundColor="#FFFFFF",
-          secondaryBackgroundColor="#F0F2F6",
-          textColor="#262730",
-          font="sans-serif")
-
 # Sidebar filters
 st.sidebar.title("Data Filters")
 
